@@ -25,18 +25,33 @@ class _GameState extends State<Game> {
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
-                CircleAvatar(
-                  radius: 50,
-                  backgroundImage: NetworkImage('https://raw.githubusercontent.com/jean2q/pedra-papel-testoura/master/imagens/tesoura1.png')
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    print('tesoura acionada')
+                  },
+                  child: CircleAvatar(
+                    radius: 50,
+                    backgroundImage: NetworkImage('https://raw.githubusercontent.com/jean2q/pedra-papel-testoura/master/imagens/tesoura1.png')
+                  ),
                 ),
-                CircleAvatar(
-                  radius: 50,
-                  backgroundImage: NetworkImage('https://raw.githubusercontent.com/jean2q/pedra-papel-testoura/master/imagens/pedra1.png')
+                GestureDetector(
+                  onTap: () {
+                    print('pedra acionada')
+                  },
+                  child: CircleAvatar(
+                    radius: 50,
+                    backgroundImage: NetworkImage('https://raw.githubusercontent.com/jean2q/pedra-papel-testoura/master/imagens/pedra1.png')
+                  ),
                 ),
-                CircleAvatar(
-                  radius: 50,
-                  backgroundImage: NetworkImage('https://raw.githubusercontent.com/jean2q/pedra-papel-testoura/master/imagens/papel1.png')
+                GestureDetector(
+                  onTap: () {
+                    print('papel acionado')
+                  },
+                  child: CircleAvatar(
+                    radius: 50,
+                    backgroundImage: NetworkImage('https://raw.githubusercontent.com/jean2q/pedra-papel-testoura/master/imagens/papel1.png')
+                  ),
                 ),
               ],
             ),
