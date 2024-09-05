@@ -28,7 +28,7 @@ class _GameState extends State<Game> {
               children: [
                 GestureDetector(
                   onTap: () {
-                    print('tesoura acionada')
+                    print('tesoura acionada');
                   },
                   child: CircleAvatar(
                     radius: 50,
@@ -37,7 +37,7 @@ class _GameState extends State<Game> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    print('pedra acionada')
+                    print('pedra acionada');
                   },
                   child: CircleAvatar(
                     radius: 50,
@@ -46,7 +46,7 @@ class _GameState extends State<Game> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    print('papel acionado')
+                    print('papel acionado');
                   },
                   child: CircleAvatar(
                     radius: 50,
@@ -60,7 +60,7 @@ class _GameState extends State<Game> {
             SizedBox(height: 20),
             CircleAvatar(
               radius: 50,
-              backgroundColor: Colors.grey, // Placeholder for image
+              backgroundColor: Colors.grey, 
             ),
             SizedBox(height: 40),
             Text('Resultado', style: TextStyle(fontSize: 20)),
